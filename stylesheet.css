@@ -1,0 +1,484 @@
+/*--------------------------------------|
+| Site: http://www.smashingmagazine.com |
+| Author: John O'Nolan                  |
+| Author URI: http://john.onolan.org    |
+| Type: Screen                          |
+| Date: June 2009                       |
+|--------------------------------------*/
+
+/*--- Common ---*/
+
+
+body {
+	/***
+	width:1020px;
+	height:580px;
+	***/
+	font-family:Arial, Verdana, sans-serif;
+	line-height: 22px;
+	color:#fff;
+	background:green;
+	/***
+	background:#474747 url(../images/bg.jpg) top left repeat;
+	****/
+}
+
+/***
+a {color:#fff;border-bottom:1px solid;}
+a:hover {color:#ff9000;}
+.anchor:hover {color:#ff9000;cursor:pointer;}
+***/
+
+strong {color:#ff9000;}
+
+audio { 
+   display:none;
+}
+
+/*--- Layout ---*/
+#content {
+	width:1000px;
+/**
+	height:590px;
+**/
+	margin:auto;
+}
+
+
+/*--- Nav ---*/
+
+#nav {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	height:50px;
+	font-size:30px;
+	background:#474747 url(../images/nav-bg.png) top left repeat-x
+}
+
+#nav li {
+	float:left;
+	margin:10px 15px 10px 15px;
+	cursor:pointer;
+}
+
+#nav li:hover {
+	color:#ff9000;
+}
+
+#nav li a {
+	color:#fff;
+	text-decoration:none;
+	border:none;
+}
+
+#nav li a:hover {
+	color:#ff9000;
+}
+/*--- Content ---*/
+
+.r {
+    -moz-border-radius-topleft: 25px;  
+    -webkit-border-top-left-radius: 25px;  
+    -moz-border-radius-topright: 25px;  
+    -webkit-border-top-right-radius: 25px;  
+    -moz-border-radius-bottomright: 25px;  
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-border-radius-bottomleft: 25px;  
+    -webkit-border-bottom-left-radius: 25px;	
+	-webkit-backface-visibility: hidden;
+}
+
+.clearBoth { 
+	clear:both; 
+}
+
+.bigbuttonSpace {
+	float:left;
+	width:35px;
+	height:200px;
+	margin: 30px 0px 0px 0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.bigbutton {
+	float:left;
+	width:230px;
+	height:230px;
+	margin: 30px 5px 5px 15px;
+	cursor:pointer;
+	opacity: 0.8;	
+}
+
+#cbutton.bigbutton {
+	background:url(../images/c.png);
+}
+
+#abutton.bigbutton {
+	background:url(../images/a.png);
+}
+
+#nbutton.bigbutton {
+	background:url(../images/n.png);
+}
+
+#sbutton.bigbutton {
+	background:url(../images/s.png);
+}
+
+.bigbutton:hover {
+	opacity: 0.8;	
+}
+
+.smallbuttonSpace {
+	float:left;
+	width:70px;
+	height:100px;
+	margin: 20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.csmallbutton, .asmallbutton, .nsmallbutton, .ssmallbutton {
+	width:400px;
+	height:100px;
+	line-height:100px;
+	margin: 45px auto;
+	font-size: 3em;
+	text-align:center;
+	cursor:pointer;	 	
+}
+
+.csmallbutton {
+	background:url(../images/c2.png)
+}
+
+.asmallbutton {
+	background:url(../images/a2.png)
+}
+
+.nsmallbutton {
+	background:url(../images/n2.png)
+}
+
+.ssmallbutton {
+	background:url(../images/s2.png)
+}
+
+#button1:hover {
+	-webkit-transform: rotateX(1440deg);
+}
+
+#button2:hover {
+	-webkit-transform: rotateX(1440deg);
+}
+
+#button3:hover {
+	-webkit-transform: rotateX(1440deg);
+}
+
+/*===================*/
+/*===== Chart  ======*/
+/*===================*/
+
+.citem {
+	float:left;
+	height: 180px;
+	width: 180px;	
+	margin: 20px 1px 1px 1px;
+	border: 8px solid #aaa; 
+	text-align:center;
+	color: #aaa;
+	line-height:200px;
+	font-size: 15em;
+	background: #777;
+	cursor:pointer;	
+}
+
+.aitem {
+	float:left;
+	height: 200px;
+	width: 200px;	
+	margin: 20px 0px 0px 0px;
+	text-align:center;
+	color: #fff;
+	line-height:200px;
+	font-size: 7em;
+	cursor:pointer;	
+	background: green;
+	background:url(../images/button_a.png) center no-repeat;
+}
+
+.smallchar {
+	color: #000;
+	font-size: 60px;	
+}
+
+.midchar {
+	color: #000;
+	font-size: 150px;	
+}
+
+.wsmallchar {
+	color: #fff;
+	font-size: 60px;	
+}
+.srarrow {
+	float:left;
+	height: 200px;
+	width: 200px;	
+	margin: 20px 0px 0px 0px;
+	text-align:center;
+	color: #fff;
+	line-height:200px;
+	border: 0px; 
+	cursor:pointer;	
+	background:url(../images/arrow_sr.png) center no-repeat;
+	opacity: 0.7;
+}
+
+.slarrow {
+	float:left;
+	height: 200px;
+	width: 200px;	
+	margin: 20px 0px 0px 0px;
+	text-align:center;
+	color: #fff;
+	line-height:200px;
+	border: 0px; 
+	cursor:pointer;	
+	background:url(../images/arrow_sl.png) center no-repeat;
+	opacity: 0.7;
+}
+
+.srarrow:hover,.slarrow:hover {
+	opacity: 0.9;
+}
+
+#box2, #box3{
+	display:none;
+}
+
+.nitem {
+	float:left;
+	height: 200px;
+	width: 200px;	
+	margin: 20px 0px 0px 0px;
+	text-align:center;
+	color: #fff;
+	line-height:200px;
+	font-size: 7em;
+	cursor:pointer;	
+	background:url(../images/button_n.png) center top no-repeat;
+}
+
+.sitem {
+	float:left;
+	height: 200px;
+	width: 200px;	
+	margin: 20px 25px 2px 25px;
+	line-height: 200px;
+	font-size: 10px;
+	text-align:center;
+	color: #fff;
+	cursor:pointer;	
+	background:url(../images/button_s.png) center top no-repeat;
+}
+
+/*=============================*/
+/*===== flashcard section =====*/
+/*=============================*/
+.flashcard {
+	float:left;
+	width:300px;
+	height:400px;
+	margin: 50px 10px;
+	text-align:center;
+	background: #777;
+	cursor:pointer;	
+}
+
+.arrow {
+	float:left;
+	width:300px;
+	height:500px;
+	line-height:500px;
+	margin: 10px 10px 10px 20px;
+	border: 0px; 
+	cursor:pointer;
+	opacity: 0.7;
+}
+
+.arrow:hover {
+	opacity: 0.9;
+}
+
+
+#leftarrow.arrow{
+	background:url(../images/arrow_l.png) center no-repeat;
+}
+
+#cfc.flashcard {
+	line-height:400px;
+	border: 10px solid #aaa; 
+	font-size: 5em;
+	color: #aaa;
+}
+
+#afc.flashcard {
+	line-height:400px;
+	font-size: 200px;
+	background:url(../images/fc_a.png) center no-repeat;
+}
+
+#nfc.flashcard {
+	font-size: 13em;
+	background:url(../images/fc_n.png) center no-repeat;
+}
+
+#sfc.flashcard {
+	background:url(../images/fc_s.png) center no-repeat;
+}
+
+#rightarrow.arrow{
+	background:url(../images/arrow_r.png) center no-repeat;
+}
+
+/*===============*/
+/*==== Match ====*/
+/*===============*/
+.mflashcard {
+	float:left;
+	width:300px;
+	height:400px;
+	margin: 50px;
+	cursor:pointer;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+	/*-webkit-backface-visibility: hidden; */
+}
+
+#cfc.mflashcard {
+	text-align:center;
+	color: #fff;
+	font-size:36px;
+	background:url(../images/fc_c.png) center no-repeat;
+}
+
+#afc.mflashcard {
+	text-align:center;
+	color: #fff;
+	font-size:36px;
+	background:url(../images/fc_a.png) center no-repeat;
+}
+
+#nfc.mflashcard {
+	text-align:center;
+	color: #fff;
+	font-size:36px;
+	background:url(../images/fc_n.png) center no-repeat;
+}
+
+#sfc.mflashcard {
+	text-align:center;
+	color: #fff;
+	font-size:36px;
+	background:url(../images/fc_s.png) center no-repeat;
+}
+
+.awrapper {
+	float:left;
+	margin: 30px;
+}
+
+.canswers {
+    position: relative;	
+	border: 10px solid #aaa; 
+	width:180px;
+	height:180px;
+	margin: 12px;
+	text-align:center;
+	font-size: 12em;
+	color: #aaa;
+	line-height:180px;
+	background: red;
+	cursor:pointer;	
+}
+
+.aanswers {
+    position: relative;	
+	width:200px;
+	height:200px;
+	margin: 12px;
+	text-align:center;
+	font-size: 10em;
+	color: #fff;
+	line-height:200px;
+	cursor:pointer;	
+	background:url(../images/button_a.png) center no-repeat;
+}
+
+.nanswers {
+    position: relative;	
+	width:200px;
+	height:200px;
+	margin: 12px;
+	text-align:center;
+	font-size: 10em;
+	color: #fff;
+	line-height:200px;
+	cursor:pointer;	
+    position: relative;	
+	background:url(../images/button_n.png) center no-repeat;
+}
+
+.sanswers {
+    position: relative;	
+	width:200px;
+	height:200px;
+	margin: 12px;
+	text-align:center;
+	color: #fff;
+	line-height:200px;
+	cursor:pointer;	
+	background:url(../images/button_s.png) center no-repeat;
+}
+
+.shapeImg {
+	position: relative;
+	top: -30px;
+}
+
+#footer {
+	list-style:none;
+	position:absolute;
+	width:1000px;
+	top:549px;
+	margin:0px;
+	padding:0px;
+	height:50px;
+	font-size:30px;
+	background:#474747 url(../images/nav-bg.png) top left repeat-x
+}
+
+#footer li {
+	float:left;
+	margin:15px 20px 15px 20px;
+	cursor:pointer;
+}
+
+#footer li:hover {
+	color:#ff9000;
+}
+
+#footer li a {
+	color:#fff;
+	text-decoration:none;
+	border:none;
+}
+
+#footer li a:hover {
+	color:#ff9000;
+}
